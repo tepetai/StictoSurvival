@@ -144,18 +144,18 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/Sticto Duels.loader.js'
+                    unityLoader.src = 'Build/Sticto Survival.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/Sticto Duels.data.unityweb',
-                                frameworkUrl: 'Build/Sticto Duels.framework.js.unityweb',
-                                codeUrl: 'Build/Sticto Duels.wasm.unityweb',
+                                dataUrl: 'Build/Sticto Survival.data.unityweb',
+                                frameworkUrl: 'Build/Sticto Survival.framework.js.unityweb',
+                                codeUrl: 'Build/Sticto Survival.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'tepetai',
                                 productName: 'Sticto Survival',
-                                productVersion: '25',
+                                productVersion: '26',
                                 // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                                 // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
                             },
