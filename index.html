@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Sticto Survival</title>
+        <title>StictoSurvivalV2</title>
         <style>
             html, body {
                 width: 100%;
@@ -37,7 +37,7 @@
                 width: 90%;
                 max-width: 250px;
                 height: 20px;
-                background: #101010;
+                background: #242424;
                 padding: 5px;
             }
             #progress-bar-fill {
@@ -144,18 +144,18 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/Sticto Survival.loader.js'
+                    unityLoader.src = 'Build/game.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/Sticto Survival.data.unityweb',
-                                frameworkUrl: 'Build/Sticto Survival.framework.js.unityweb',
-                                codeUrl: 'Build/Sticto Survival.wasm.unityweb',
+                                dataUrl: 'Build/game.data.br',
+                                frameworkUrl: 'Build/game.framework.js.br',
+                                codeUrl: 'Build/game.wasm.br',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'tepetai',
-                                productName: 'Sticto Survival',
-                                productVersion: '51',
+                                productName: 'StictoSurvivalV2',
+                                productVersion: '1',
                                 // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                                 // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
                             },
